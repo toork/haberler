@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html data-ng-app="myApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haberler - Gazeteler</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="./assets/app.css" />
+
+
+
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <a target="_blank" href="#" class="navbar-brand">Haberler - Gazeteler</a>
+            <button fullscreen type="button" class="btn btn-mini btn-info navbar-btn pull-right visible-lg">Tam Ekran</button>
+        </div>
+        </nav>
+      </header>
+      <main id="view-container">
+        <div ng-view></div>
+      </main>
+     <!-- <footer>
+        <nav class="navbar navbar-inverse navbar-default navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <p class="navbar-text navbar-left visible-lg">Republished by <a target="_blank" href="#" class="navbar-link">AppGaraj</a></p>
+            <p class="navbar-text navbar-right"><a target="_blank" href="#" class="navbar-link"></a></p>
+          </div>
+        </nav>
+      </footer> -->
+    </div>
+    <script src="./assets/app.js"></script>
+    <script src="./node_modules/grunt-contrib-watch/node_modules/tiny-lr/lib/public/livereload.js"></script>
+  </body>
+</html>
